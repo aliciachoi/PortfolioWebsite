@@ -13,10 +13,10 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I'm a software developer with a background in digital marketing and project management. I specialize in Python, Django, JavaScript, React, TailwindCSS, and Next.js for crafting full-stack applications. 
+            I am a software developer with a background in digital marketing and project management. I specialize in Python, Django, JavaScript, React, TailwindCSS, and Next.js for crafting full-stack applications. 
           </p>
           <p className='py-2 text-gray-600'>
-            I'm always eager to learn and adapt to new technologies, focusing on selecting the best tools for each project.
+            I am always eager to learn and adapt to new technologies, focusing on selecting the best tools for each project.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
