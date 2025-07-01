@@ -13,12 +13,11 @@ const Main = () => {
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hi, I&#39;m <span className='text-[#5651e5]'> Alicia </span>
+            Hi, I am<span className='text-[#5651e5]'> Alicia. </span>
           </h1>
-          <h1 className='py-2 text-gray-700'>A Front-End Web Developer</h1>
+          <h1 className='py-2 text-gray-700'>A Full-stack Software Developer.</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I’m focused on building responsive front-end web applications
-            integrating back-end technologies.
+          I come from a background in marketing and analytics, and I love creating intuitive, impactful software that solves real user problems.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a

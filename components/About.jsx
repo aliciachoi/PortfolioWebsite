@@ -13,14 +13,17 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I am a software developer with a background in digital marketing and project management. I specialize in Python, Django, JavaScript, React, TailwindCSS, and Next.js for crafting full-stack applications. 
+          In 2022, I moved from China to the UK—my first time living abroad and starting a completely new chapter. Facing so many changes, I leaned on lessons I’d learned from years of surfing—how to read the waves and roll with whatever comes my way—which helped me adapt and stay grounded.
           </p>
           <p className='py-2 text-gray-600'>
-            I am always eager to learn and adapt to new technologies, focusing on selecting the best tools for each project.
+          Around that time, a close friend who’s a developer sparked my interest in coding. What started as curiosity quickly turned into a passion, so I took the plunge by joining a coding bootcamp to build a strong foundation. That experience inspired me to deepen my knowledge further, leading me to pursue an MSc in Computer Science.
+          </p>
+          <p className='py-2 text-gray-600'>
+          Since then, I’ve built full-stack applications using Python, JavaScript, Django, React, and Node.js. I’m experienced with databases like PostgreSQL and MongoDB, and comfortable working with tools such as Docker, Git, and AWS. My focus is on creating practical, secure, and user-friendly solutions.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
-              Check out some of my latest projects.
+            Take a look at some of my recent projects.
             </p>
           </Link>
         </div>
