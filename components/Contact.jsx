@@ -1,136 +1,99 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import ContactImg from '../public/assets/contact.jpg';
+import ContactImg from '../public/assets/contact.png';
 
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-          Contact
-        </p>
+      <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
+        {/* Heading */}
+        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h2 className='py-4'>Get In Touch</h2>
-        <div className='grid lg:grid-cols-5 gap-8'>
-          {/* left */}
-          <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
-            <div className='lg:p-4 h-full '>
-              <div>
-                <Image
-                  className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src={ContactImg}
-                  alt='/'
-                />
-              </div>
-              <div>
-                <h2 className='py-2'>Alcia Choi</h2>
-                <p>Full-stack Developer</p>
-                <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
-                </p>
-              </div>
-              <div>
-                <p className='uppercase pt-8'>Connect With Me</p>
-                <div className='flex items-center justify-between py-4'>
-                  <a
-                    href='https://linkedin.com/in/aliciachoi21'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-                  <a
-                    href='https://github.com/aliciachoi/'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaGithub />
-                    </div>
-                  </a>
 
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Contact Card */}
+        <div className='flex justify-center py-8'>
+          <div className='max-w-[500px] w-full bg-gradient-to-br from-white to-gray-50 shadow-2xl shadow-gray-300/50 rounded-3xl overflow-hidden border border-gray-100/50 backdrop-blur-sm'>
+            <div className='text-center p-12 relative'>
+              {/* Decorative Gradient */}
+              <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#5651e5]/5 to-transparent pointer-events-none'></div>
 
-          {/* right */}
-          <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
-            <div className='p-4'>
-              <form
-                action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
-                method='POST'
-                encType='multipart/form-data'
-              >
-                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                  <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Name</label>
-                    <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
-                      type='text'
-                      name='name'
-                    />
-                  </div>
-                  <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
-                      Phone Number
-                    </label>
-                    <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300'
-                      type='text'
-                      name='phone'
+              <div className='relative z-10'>
+                {/* Profile Image */}
+                <div className='mb-8'>
+                  <div className='relative w-48 h-48 mx-auto overflow-hidden rounded-full'>
+                    <div className='absolute inset-0 bg-gradient-to-br from-[#5651e5]/20 to-purple-300/20 rounded-full blur-xl animate-pulse'></div>
+                    <Image
+                      className='rounded-full object-cover hover:scale-105 ease-in duration-500 border-4 border-white shadow-xl relative z-10'
+                      src={ContactImg}
+                      alt='Contact'
+                      width={192}
+                      height={192}
                     />
                   </div>
                 </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>Email</label>
-                  <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
-                    type='email'
-                    name='email'
-                  />
+
+                {/* Info */}
+                <div className='mb-10'>
+                  <h2 className='text-3xl font-bold mb-3 text-gray-800'>Alicia Choi</h2>
+                  <p className='text-xl text-[#5651e5] font-medium mb-6'>Full-stack Developer</p>
+                  <p className='text-gray-600 leading-relaxed text-lg max-w-[400px] text-left'>
+                    I&apos;m eager to land my first full-time role and grow as a developer. If you&apos;re looking for someone passionate and ready to contribute, let&apos;s connect!
+                  </p>
                 </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>Subject</label>
-                  <input
-                    className='border-2 rounded-lg p-3 flex border-gray-300'
-                    type='text'
-                    name='subject'
-                  />
+
+                {/* Social Links */}
+                <div>
+                  <p className='uppercase text-sm font-semibold mb-8 text-gray-700 tracking-wider'>
+                    Connect With Me
+                  </p>
+                  <div className='flex items-center justify-center gap-8'>
+                    <a
+                      href='https://linkedin.com/in/aliciachoi21'
+                      target='_blank'
+                      rel='noreferrer'
+                      className='group'
+                    >
+                      <div className='rounded-2xl shadow-lg shadow-gray-300/60 p-5 cursor-pointer hover:scale-110 hover:-translate-y-1 ease-in-out duration-300 bg-white/80 backdrop-blur-sm hover:bg-[#0077b5] group-hover:shadow-xl border border-gray-200/50'>
+                        <FaLinkedinIn size={28} className='text-[#0077b5] group-hover:text-white transition-all duration-300' />
+                      </div>
+                    </a>
+
+                    <a
+                      href='https://github.com/aliciachoi/'
+                      target='_blank'
+                      rel='noreferrer'
+                      className='group'
+                    >
+                      <div className='rounded-2xl shadow-lg shadow-gray-300/60 p-5 cursor-pointer hover:scale-110 hover:-translate-y-1 ease-in-out duration-300 bg-white/80 backdrop-blur-sm hover:bg-gray-800 group-hover:shadow-xl border border-gray-200/50'>
+                        <FaGithub size={28} className='text-gray-800 group-hover:text-white transition-all duration-300' />
+                      </div>
+                    </a>
+
+                    <a
+                      href='mailto:alicia@example.com'
+                      className='group'
+                    >
+                      <div className='rounded-2xl shadow-lg shadow-gray-300/60 p-5 cursor-pointer hover:scale-110 hover:-translate-y-1 ease-in-out duration-300 bg-white/80 backdrop-blur-sm hover:bg-red-500 group-hover:shadow-xl border border-gray-200/50'>
+                        <AiOutlineMail size={28} className='text-red-500 group-hover:text-white transition-all duration-300' />
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>Message</label>
-                  <textarea
-                    className='border-2 rounded-lg p-3 border-gray-300'
-                    rows='10'
-                    name='message'
-                  ></textarea>
-                </div>
-                <button className='w-full p-4 text-gray-100 mt-4'>
-                  Send Message
-                </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Back to Top Button */}
         <div className='flex justify-center py-12'>
           <Link href='/'>
             <a>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <HiOutlineChevronDoubleUp
-                  className='text-[#5651e5]'
-                  size={30}
-                />
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-white'>
+                <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
               </div>
             </a>
           </Link>
